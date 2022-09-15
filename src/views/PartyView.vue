@@ -2,7 +2,7 @@
 export default {
   data: function () {
     return {
-      message: "Welcome to Pokemon Takedown!",
+      message: "Add Pokemon To Your Party!",
     };
   },
   created: function () {},
@@ -13,7 +13,6 @@ export default {
 <template>
   <div class="home">
     <h1>{{ message }}</h1>
-    <img src="../assets/PikachuVsLucario.png" width="900" height="600" />
   </div>
 </template>
 

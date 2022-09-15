@@ -1,5 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import SignupView from "../views/SignupView.vue";
+import LoginView from "../views/LoginView.vue";
+import LogoutView from "../views/LogoutView.vue";
+import TakedownView from "../views/TakedownView.vue";
+import PartyView from "../views/PartyView.vue";
+import PokemonView from "../views/PokemonView.vue";
 
 const routes = [
   {
@@ -16,6 +22,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
+  { path: "/signup", name: "signup", component: SignupView },
+  { path: "/login", name: "login", component: LoginView },
+  { path: "/logout", name: "logout", component: LogoutView },
+  { path: "/takedown", name: "takedown", component: TakedownView },
+  { path: "/party", name: "party", component: PartyView },
+  { path: "/pokemon", name: "pokemon", component: PokemonView },
 ];
 
 const router = createRouter({
